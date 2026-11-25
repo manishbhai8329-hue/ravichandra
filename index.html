@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#103d3d">
+<meta name="description" content="Trade With Ravi - Explore stock market concepts, financial education and risk awareness in Telugu and English.">
+<title>Trade With Ravi | Financial Education Community</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '3143969969139356');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
+
+<style>
+:root{
+  --dark:#103d3d;
+  --teal:#086d65;
+  --gold:#edbf85;
+  --cream:#fffaf2;
+  --text:#183b39;
+  --muted:#526d68;
+  --border:#dce7df;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  -webkit-text-size-adjust:100%;
+}
+
+body{
+  margin:0;
+  background:var(--dark);
+  color:var(--text);
+  font-family:system-ui,-apple-system,
+  "Noto Sans Telugu","Gautami",
+  "Segoe UI",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+
+.page{
+  min-height:100vh;
+  min-height:100svh;
+  min-height:100dvh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:12px;
+  background:
+    radial-gradient(circle at 0% 0%,#287d6e80,transparent 48%),
+    radial-gradient(circle at 100% 100%,#bc925340,transparent 45%),
+    linear-gradient(145deg,#123e3c,#092625);
+}
+
+/* PREMIUM CARD */
+
+.card{
+  width:100%;
+  max-width:405px;
+  border:1px solid #edbf8560;
+  border-radius:25px;
+  background:var(--cream);
+  box-shadow:0 18px 45px #0005;
+  overflow:hidden;
+}
+
+/* BRAND HEADER */
+
+.brand-header{
+  position:relative;
+  padding:13px 17px 18px;
+  background:
+    radial-gradient(circle at 50% 0%,#ffffff10,transparent 65%),
+    linear-gradient(135deg,#155b54,#103d3d);
+  color:#ffffff;
+  text-align:center;
+  border-bottom:3px solid var(--gold);
+}
+
+.top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  margin-bottom:14px;
+}
+
+.category{
+  color:#e9d3b1;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:1px;
+}
+
+.language{
+  padding:5px 9px;
+  border:1px solid #ffffff35;
+  border-radius:20px;
+  background:#ffffff0a;
+  color:#ffffff;
+  font-size:10px;
+  font-weight:750;
+  white-space:nowrap;
+}
+
+/* CIRCULAR PROFILE */
+
+.logo{
+  position:relative;
+  width:85px;
+  height:85px;
+  margin:0 auto 10px;
+  display:grid;
+  place-items:center;
+  border:3px solid var(--gold);
+  border-radius:50%;
+  background:#286c60;
+  overflow:hidden;
+  box-shadow:
+    0 0 0 5px #edbf8515,
+    0 0 22px #edbf8540;
+}
+
+.logo img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.logo-fallback{
+  color:var(--gold);
+  font-size:28px;
+  font-weight:900;
+}
+
+.eyebrow{
+  margin:0 0 5px;
+  color:#c4ddd4;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:2px;
+}
+
+h1{
+  margin:0;
+  font-size:clamp(27px,7.5vw,35px);
+  font-weight:950;
+  line-height:1.15;
+  letter-spacing:-.8px;
+}
+
+h1 span{
+  color:var(--gold);
+}
+
+.tagline{
+  margin:7px 0 0;
+  color:#c5ddd6;
+  font-size:10px;
+  font-weight:650;
+  letter-spacing:.4px;
+}
+
+/* EDUCATIONAL CONTENT */
+
+.content{
+  padding:17px 17px 13px;
+}
+
+.regional{
+  display:inline-block;
+  margin:0 0 7px;
+  padding:5px 9px;
+  border-radius:5px;
+  background:#e5efe7;
+  color:var(--teal);
+  font-size:10px;
+  font-weight:850;
+}
+
+.headline{
+  margin:0;
+  color:var(--text);
+  font-size:clamp(19px,5.5vw,24px);
+  font-weight:850;
+  line-height:1.5;
+}
+
+.headline span{
+  color:var(--teal);
+}
+
+.description{
+  margin:8px 0 0;
+  color:var(--muted);
+  font-size:12px;
+  line-height:1.7;
+}
+
+/* MAIN GLOWING CTA */
+
+.cta-area{
+  margin:16px 0 14px;
+}
+
+.cta{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  width:100%;
+  min-height:57px;
+  padding:13px 7px;
+  border:1px solid #269d87;
+  border-radius:12px;
+  background:linear-gradient(
+    110deg,#075b53,#0a8474
+  );
+  color:#ffffff;
+  text-decoration:none;
+  text-align:center;
+  font-size:clamp(11px,3.5vw,15px);
+  font-weight:900;
+  line-height:1.3;
+  box-shadow:
+    0 5px 20px #086d6540,
+    0 0 12px #086d6520;
+  touch-action:manipulation;
+  -webkit-tap-highlight-color:transparent;
+}
+
+.cta svg{
+  width:19px;
+  height:19px;
+  flex:none;
+  fill:currentColor;
+}
+
+.micro{
+  margin:8px 0 0;
+  color:var(--muted);
+  font-size:10px;
+  font-weight:650;
+  text-align:center;
+}
+
+/* LEARNING TOPICS */
+
+.section-label{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin:0 0 8px;
+  color:var(--teal);
+  font-size:9px;
+  font-weight:850;
+  letter-spacing:1px;
+}
+
+.section-label::after{
+  content:"";
+  height:1px;
+  flex:1;
+  background:var(--border);
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:7px;
+}
+
+.feature{
+  padding:11px 5px;
+  border:1px solid var(--border);
+  border-radius:11px;
+  background:#edf3eb;
+  text-align:center;
+}
+
+.feature-icon{
+  width:32px;
+  height:32px;
+  margin:0 auto 7px;
+  display:grid;
+  place-items:center;
+  border-radius:9px;
+  background:#d7e9df;
+  color:var(--teal);
+}
+
+.feature-icon svg{
+  width:18px;
+  height:18px;
+  fill:none;
+  stroke:currentColor;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.feature strong{
+  display:block;
+  color:var(--text);
+  font-size:11px;
+  font-weight:800;
+  line-height:1.4;
+}
+
+.feature small{
+  display:block;
+  margin-top:5px;
+  color:var(--muted);
+  font-size:10px;
+  line-height:1.5;
+}
+
+/* DISCLAIMER AND LEGAL FOOTER */
+
+.footer{
+  padding:12px 15px;
+  border-top:1px solid var(--border);
+  background:#eaf0e8;
+}
+
+.disclaimer{
+  margin:0;
+  color:var(--muted);
+  font-size:10.5px;
+  line-height:1.65;
+  text-align:center;
+}
+
+.disclaimer b{
+  color:var(--dark);
+}
+
+.legal{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:7px;
+}
+
+.legal button{
+  padding:5px 0;
+  border:0;
+  background:none;
+  color:var(--teal);
+  font-family:inherit;
+  font-size:10px;
+  font-weight:750;
+  text-decoration:underline;
+  text-underline-offset:3px;
+  cursor:pointer;
+}
+
+.legal span{
+  color:#91a69d;
+}
+
+.copyright{
+  margin:5px 0 0;
+  color:var(--muted);
+  font-size:9px;
+  text-align:center;
+}
+
+/* FUNCTIONAL LEGAL POPUPS */
+
+dialog{
+  width:calc(100% - 28px);
+  max-width:450px;
+  max-height:85vh;
+  max-height:85dvh;
+  overflow-y:auto;
+  padding:23px 18px;
+  border:1px solid var(--border);
+  border-radius:18px;
+  background:var(--cream);
+  color:var(--text);
+  box-shadow:0 20px 60px #0006;
+  overscroll-behavior:contain;
+}
+
+dialog::backdrop{
+  background:#092625dd;
+}
+
+dialog h2{
+  margin:0 35px 15px 0;
+  color:var(--dark);
+  font-size:20px;
+}
+
+dialog h3{
+  margin:16px 0 5px;
+  color:var(--teal);
+  font-size:13px;
+}
+
+dialog p{
+  margin:7px 0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.75;
+}
+
+dialog a{
+  color:var(--teal);
+  overflow-wrap:anywhere;
+}
+
+.close{
+  position:absolute;
+  top:11px;
+  right:11px;
+  width:34px;
+  height:34px;
+  border:1px solid var(--border);
+  border-radius:50%;
+  background:#e5efe7;
+  color:var(--dark);
+  font-size:23px;
+  cursor:pointer;
+}
+
+body.modal-open{
+  overflow:hidden;
+}
+
+button:focus-visible,
+a:focus-visible{
+  outline:3px solid #bd8a42;
+  outline-offset:3px;
+}
+
+/* COMPACT MOBILE OPTIMIZATION */
+
+@media(max-height:780px){
+
+  .page{
+    padding:8px;
+  }
+
+  .brand-header{
+    padding:9px 13px 11px;
+  }
+
+  .top{
+    margin-bottom:9px;
+  }
+
+  .logo{
+    width:65px;
+    height:65px;
+    margin-bottom:7px;
+  }
+
+  h1{
+    font-size:27px;
+  }
+
+  .tagline{
+    margin-top:5px;
+  }
+
+  .content{
+    padding:11px 13px 9px;
+  }
+
+  .regional{
+    margin-bottom:5px;
+  }
+
+  .headline{
+    font-size:18px;
+  }
+
+  .description{
+    margin-top:6px;
+    font-size:11px;
+  }
+
+  .cta-area{
+    margin:12px 0 10px;
+  }
+
+  .cta{
+    min-height:50px;
+  }
+
+  .micro{
+    margin-top:6px;
+  }
+
+  .section-label{
+    margin-bottom:5px;
+  }
+
+  .features{
+    gap:5px;
+  }
+
+  .feature{
+    padding:7px 4px;
+  }
+
+  .feature-icon{
+    width:26px;
+    height:26px;
+    margin-bottom:5px;
+  }
+
+  .feature strong{
+    font-size:10px;
+  }
+
+  .feature small{
+    font-size:9.5px;
+    margin-top:3px;
+  }
+
+  .footer{
+    padding:8px 12px;
+  }
+
+  .disclaimer{
+    font-size:10px;
+  }
+
+  .legal{
+    margin-top:4px;
+  }
+
+  .copyright{
+    margin-top:3px;
+  }
+}
+
+/* SMALL MOBILE DEVICES */
+
+@media(max-width:350px){
+
+  .page{
+    padding:6px;
+  }
+
+  .brand-header{
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  .category{
+    font-size:8px;
+  }
+
+  h1{
+    font-size:25px;
+  }
+
+  .content{
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  .cta{
+    font-size:11px;
+    gap:5px;
+  }
+
+  .cta svg{
+    width:16px;
+    height:16px;
+  }
+}
+
+@media(max-height:620px){
+
+  .brand-header{
+    padding-top:7px;
+    padding-bottom:9px;
+  }
+
+  .top{
+    margin-bottom:6px;
+  }
+
+  .logo{
+    width:52px;
+    height:52px;
+    margin-bottom:5px;
+  }
+
+  .headline{
+    font-size:16px;
+  }
+
+  .cta-area{
+    margin:9px 0;
+  }
+
+  .feature{
+    padding:5px 3px;
+  }
+
+  .feature-icon{
+    width:23px;
+    height:23px;
+    margin-bottom:3px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Meta Pixel Noscript -->
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=3143969969139356&ev=PageView&noscript=1"
+/></noscript>
+
+<main class="page">
+
+<article class="card">
+
+  <!-- BRAND HEADER -->
+
+  <header class="brand-header">
+
+    <div class="top">
+
+      <span class="category">
+        FINANCIAL EDUCATION
+      </span>
+
+      <span class="language">
+        తెలుగు + English
+      </span>
+
+    </div>
+
+    <div class="logo">
+
+      <span class="logo-fallback" aria-hidden="true">
+        TR
+      </span>
+
+      <img src="https://github.com/manishbhai8329-hue/raviimage/releases/download/tk/ravi.jpg"
+        width="85"
+        height="85"
+        alt="Trade With Ravi logo"
+        fetchpriority="high"
+        onerror="this.style.display='none'">
+
+    </div>
+
+    <p class="eyebrow">
+      WELCOME TO
+    </p>
+
+    <h1>
+      TRADE WITH <span>RAVI</span>
+    </h1>
+
+    <p class="tagline">
+      KNOWLEDGE • LEARNING • DISCIPLINE
+    </p>
+
+  </header>
+
+  <!-- MAIN EDUCATIONAL CONTENT -->
+
+  <section class="content">
+
+    <p class="regional">
+      తెలుగు ఆర్థిక విద్యా సముదాయం
+    </p>
+
+    <h2 class="headline">
+
+      జ్ఞానంతో మార్కెట్‌ను అర్థం చేసుకోండి.<br>
+
+      <span>
+        తెలుగులో సులభంగా నేర్చుకోండి.
+      </span>
+
+    </h2>
+
+    <p class="description">
+
+      స్టాక్ మార్కెట్ ప్రాథమిక అంశాలు,
+      చార్ట్‌ల పరిచయం మరియు ఆర్థిక
+      పరిజ్ఞానాన్ని పెంచుకోండి.
+
+      A dedicated learning community for
+      stock market education, financial knowledge
+      and risk awareness in Telugu &amp; English.
+
+    </p>
+
+    <!-- MAIN CTA - MIDDLE POSITION -->
+
+    <div class="cta-area">
+
+      <a class="cta"
+         id="joinBtn"
+         href="https://t.me/+bmKCFOpq4rplOWE1">
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21.7 3.4L2.9 10.7c-1.3.5-1.3 1.2-.2 1.5l4.8 1.5 1.8 5.5c.2.6.1.8.7.8.5 0 .7-.2 1-.5l2.3-2.2 4.9 3.6c.9.5 1.5.2 1.7-.9l3.2-15.1c.3-1.3-.5-1.9-1.4-1.5zM9.4 13.4l10-6.3c.5-.3.9-.1.5.3l-8.2 7.4-.3 3.2z"/>
+        </svg>
+
+        JOIN FREE TELEGRAM COMMUNITY
+
+      </a>
+
+      <p class="micro">
+        Free Learning Community • Telugu &amp; English
+      </p>
+
+    </div>
+
+    <!-- EDUCATIONAL BENEFITS -->
+
+    <p class="section-label">
+      EXPLORE FINANCIAL KNOWLEDGE
+    </p>
+
+    <div class="features">
+
+      <div class="feature">
+
+        <div class="feature-icon">
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 19V5"/>
+            <path d="M4 19h16"/>
+            <path d="M9 15v-4"/>
+            <path d="M14 15V8"/>
+            <path d="M19 15V6"/>
+          </svg>
+
+        </div>
+
+        <strong>
+          Market<br>Fundamentals
+        </strong>
+
+        <small>
+          మార్కెట్ ప్రాథమిక అంశాలు
+        </small>
+
+      </div>
+
+      <div class="feature">
+
+        <div class="feature-icon">
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 6c-3-2-6-2-9-1v14c3-1 6-1 9 1"/>
+            <path d="M12 6c3-2 6-2 9-1v14c-3-1-6-1-9 1"/>
+            <path d="M12 6v14"/>
+          </svg>
+
+        </div>
+
+        <strong>
+          Educational<br>Learning
+        </strong>
+
+        <small>
+          సులభమైన ఆర్థిక విద్య
+        </small>
+
+      </div>
+
+      <div class="feature">
+
+        <div class="feature-icon">
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3l8 3v6c0 5-8 9-8 9s-8-4-8-9V6z"/>
+            <path d="M9 12l2 2 4-4"/>
+          </svg>
+
+        </div>
+
+        <strong>
+          Financial<br>Risk Awareness
+        </strong>
+
+        <small>
+          ఆర్థిక నష్టాలపై అవగాహన
+        </small>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- VISIBLE RISK DISCLAIMER -->
+
+  <footer class="footer">
+
+    <p class="disclaimer">
+
+      <b>Disclaimer / గమనిక:</b>
+
+      ఈ సమాచారం విద్యా ప్రయోజనాల కోసం మాత్రమే.
+      పెట్టుబడులు మరియు ట్రేడింగ్‌లో
+      ఆర్థిక నష్టాల ప్రమాదం ఉంటుంది.
+
+      Educational purposes only.
+      Not investment advice or buy/sell recommendations.
+      Capital is at risk. No guaranteed returns.
+
+    </p>
+
+    <nav class="legal" aria-label="Legal information">
+
+      <button type="button" data-dialog="privacy">
+        Privacy Policy
+      </button>
+
+      <span>•</span>
+
+      <button type="button" data-dialog="terms">
+        Terms &amp; Conditions
+      </button>
+
+      <span>•</span>
+
+      <button type="button" data-dialog="risk">
+        Disclaimer
+      </button>
+
+    </nav>
+
+    <p class="copyright">
+      © 2026 Trade With Ravi
+    </p>
+
+  </footer>
+
+</article>
+
+</main>
+
+<!-- PRIVACY POLICY -->
+
+<dialog id="privacy" aria-labelledby="privacyTitle">
+
+  <button class="close"
+    type="button"
+    aria-label="Close Privacy Policy">×</button>
+
+  <h2 id="privacyTitle">
+    Privacy Policy
+  </h2>
+
+  <p>
+    గోప్యతా విధానం
+  </p>
+
+  <p>
+    Trade With Ravi provides general educational
+    information about financial markets,
+    financial literacy and risk awareness.
+
+    This Privacy Policy describes how information
+    may be processed when visitors access
+    this website.
+  </p>
+
+  <h3>1. Information Collection</h3>
+
+  <p>
+    This landing page does not contain
+    registration, payment or personal
+    information submission forms.
+
+    Website hosting and analytics services
+    may process IP addresses, browser information,
+    device details and website interaction data.
+  </p>
+
+  <h3>2. Meta Pixel and Cookies</h3>
+
+  <p>
+    This website uses Meta Pixel to measure
+    page visits and interactions with the
+    Telegram community button.
+
+    Meta may receive browser activity,
+    cookies, device information and website
+    event data for advertising measurement
+    and related purposes.
+  </p>
+
+  <h3>3. Purpose of Data Processing</h3>
+
+  <p>
+    Information may be processed to measure
+    advertising performance, understand
+    website interactions and maintain
+    website functionality.
+  </p>
+
+  <h3>4. Third-Party Platforms</h3>
+
+  <p>
+    Clicking the Telegram community button
+    opens an independently operated
+    third-party platform.
+
+    Meta and Telegram process information
+    according to their respective privacy policies.
+  </p>
+
+  <p>
+    <a href="https://www.facebook.com/privacy/policy/"
+       target="_blank"
+       rel="noopener noreferrer">
+      Meta Privacy Policy
+    </a>
+  </p>
+
+  <p>
+    <a href="https://telegram.org/privacy"
+       target="_blank"
+       rel="noopener noreferrer">
+      Telegram Privacy Policy
+    </a>
+  </p>
+
+  <h3>5. Cookies and Privacy Choices</h3>
+
+  <p>
+    Visitors may manage cookies through
+    browser settings and available Meta
+    advertising preferences.
+
+    Applicable privacy rights and tracking
+    consent requirements must be respected.
+  </p>
+
+  <h3>6. Data Retention and Security</h3>
+
+  <p>
+    Website-related information should be
+    retained only as necessary for legitimate
+    purposes and applicable legal requirements.
+
+    Third-party services maintain their own
+    data retention and security practices.
+  </p>
+
+  <h3>7. Contact Information</h3>
+
+  <p>
+    For privacy inquiries or applicable
+    data protection requests, contact
+    the Trade With Ravi website operator.
+  </p>
+
+  <!-- Replace with actual contact email -->
+
+  <p>
+    Email: [ADD ACTUAL CONTACT EMAIL]
+  </p>
+
+  <h3>8. Policy Updates</h3>
+
+  <p>
+    This Privacy Policy may be updated
+    to reflect changes in website practices
+    or applicable legal requirements.
+  </p>
+
+</dialog>
+
+<!-- TERMS AND CONDITIONS -->
+
+<dialog id="terms" aria-labelledby="termsTitle">
+
+  <button class="close"
+    type="button"
+    aria-label="Close Terms and Conditions">×</button>
+
+  <h2 id="termsTitle">
+    Terms &amp; Conditions
+  </h2>
+
+  <p>
+    నిబంధనలు మరియు షరతులు
+  </p>
+
+  <h3>1. Educational Purpose</h3>
+
+  <p>
+    Trade With Ravi provides general
+    educational information related to
+    stock market fundamentals, financial
+    literacy, chart concepts and risk awareness.
+  </p>
+
+  <h3>2. No Investment Advice</h3>
+
+  <p>
+    Website content does not constitute
+    personalized financial advice,
+    investment advice, trading signals
+    or recommendations to purchase
+    or sell financial securities.
+  </p>
+
+  <h3>3. Financial Risks</h3>
+
+  <p>
+    Trading and investing involve financial
+    risks, including possible partial or
+    complete loss of invested capital.
+
+    No financial returns or profits
+    are guaranteed.
+  </p>
+
+  <h3>4. Independent Financial Decisions</h3>
+
+  <p>
+    Visitors should independently evaluate
+    financial information and consult
+    an appropriately qualified or
+    SEBI-registered professional where
+    necessary before making investment decisions.
+  </p>
+
+  <h3>5. Information Accuracy</h3>
+
+  <p>
+    Educational information may become outdated
+    as market conditions change.
+
+    Visitors should independently verify
+    information before relying on it.
+  </p>
+
+  <h3>6. Community Access</h3>
+
+  <p>
+    Joining the Telegram learning community
+    is voluntary.
+
+    Clicking the website button does not
+    automatically subscribe a visitor
+    to the Telegram community.
+  </p>
+
+  <h3>7. Third-Party Platforms</h3>
+
+  <p>
+    Telegram is an independently operated
+    third-party platform.
+
+    Its own privacy policies, terms
+    and community rules apply.
+  </p>
+
+  <h3>8. Responsible Use</h3>
+
+  <p>
+    Educational examples should not be
+    interpreted as instructions to undertake
+    financial transactions.
+
+    Visitors are responsible for their
+    independent financial decisions.
+  </p>
+
+  <h3>9. Changes to Terms</h3>
+
+  <p>
+    These terms may be updated to reflect
+    changes in website practices and
+    applicable legal requirements.
+  </p>
+
+</dialog>
+
+<!-- DETAILED FINANCIAL RISK DISCLAIMER -->
+
+<dialog id="risk" aria-labelledby="riskTitle">
+
+  <button class="close"
+    type="button"
+    aria-label="Close Disclaimer">×</button>
+
+  <h2 id="riskTitle">
+    Financial Risk Disclaimer
+  </h2>
+
+  <p>
+    ఆర్థిక నష్టాల గురించి గమనిక
+  </p>
+
+  <p>
+    ఈ వెబ్‌సైట్‌లో అందించిన సమాచారం
+    విద్యా ప్రయోజనాల కోసం మాత్రమే.
+    ఇది వ్యక్తిగత పెట్టుబడి సలహా కాదు.
+  </p>
+
+  <p>
+    స్టాక్ మార్కెట్‌లో పెట్టుబడులు మరియు
+    ట్రేడింగ్ వల్ల ఆర్థిక నష్టాలు సంభవించవచ్చు.
+    ఎలాంటి లాభాలకు హామీ ఇవ్వబడదు.
+  </p>
+
+  <h3>Educational Information Only</h3>
+
+  <p>
+    Information available on this website
+    is intended for general financial
+    education and awareness.
+
+    It is not personalized investment advice.
+  </p>
+
+  <h3>Market Volatility</h3>
+
+  <p>
+    Financial markets are subject to
+    volatility and uncertainty.
+
+    Trading and investing may result
+    in the loss of part or all
+    of invested capital.
+  </p>
+
+  <h3>No Guaranteed Returns</h3>
+
+  <p>
+    Educational examples, historical market
+    information and chart illustrations
+    do not guarantee future financial performance.
+  </p>
+
+  <h3>No Buy or Sell Recommendations</h3>
+
+  <p>
+    Educational content should not be interpreted
+    as a recommendation or instruction
+    to purchase or sell financial instruments.
+  </p>
+
+  <h3>Independent Research</h3>
+
+  <p>
+    Visitors should conduct independent research,
+    understand their financial circumstances
+    and seek guidance from appropriately
+    registered professionals before making
+    financial decisions.
+  </p>
+
+</dialog>
+
+<script>
+(function(){
+  "use strict";
+
+  // Subscribe event only on manual CTA click.
+  // No auto redirect.
+  // No countdown.
+  // No artificial click delay.
+
+  document.getElementById("joinBtn")
+    .addEventListener("click",function(){
+
+      try{
+        if(typeof window.fbq==="function"){
+          window.fbq("track","Subscribe");
+        }
+      }catch(error){}
+
+    });
+
+  // Open legal popups
+
+  document.querySelectorAll("[data-dialog]")
+    .forEach(function(button){
+
+      button.addEventListener("click",function(){
+
+        const dialog=document.getElementById(
+          button.dataset.dialog
+        );
+
+        if(dialog){
+          dialog.showModal();
+          document.body.classList.add("modal-open");
+        }
+
+      });
+
+    });
+
+  // Close legal popups
+
+  document.querySelectorAll("dialog")
+    .forEach(function(dialog){
+
+      dialog.querySelector(".close")
+        .addEventListener("click",function(){
+          dialog.close();
+        });
+
+      dialog.addEventListener("close",function(){
+        document.body.classList.remove("modal-open");
+      });
+
+      dialog.addEventListener("click",function(event){
+
+        if(event.target!==dialog)return;
+
+        const rect=dialog.getBoundingClientRect();
+
+        if(
+          event.clientX<rect.left ||
+          event.clientX>rect.right ||
+          event.clientY<rect.top ||
+          event.clientY>rect.bottom
+        ){
+          dialog.close();
+        }
+
+      });
+
+    });
+
+})();
+</script>
+
+</body>
+</html>
